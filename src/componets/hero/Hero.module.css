@@ -27,9 +27,9 @@
 .cart2{
     margin-left: 32rem;
     position: absolute;
-    bottom: 25%;
+    bottom: 30%;
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
     align-items:center;
     
 }
