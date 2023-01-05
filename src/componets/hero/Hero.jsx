@@ -60,10 +60,19 @@ const Hero = () => {
           <span>1.5m</span>
           <span>Monthly Traffic</span>
         </div>
-        <div className={css.customers}>
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ rotate: 360, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+          }}
+          className={css.customers}
+        >
           <span>1000K</span>
           <span>Happy Customers</span>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
