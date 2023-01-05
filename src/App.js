@@ -1,4 +1,5 @@
 import "./App.css";
+// import Footer from "./componets/Footer/Footer";
 import Header from "./componets/header/Header";
 import Hero from "./componets/hero/Hero";
 import Products from "./componets/products/Products";
@@ -15,6 +16,7 @@ function App() {
       <Virtual />
       <Products />
       <Testimonials />
+      {/* <Footer /> */}
     </div>
   );
 }
