@@ -45,6 +45,9 @@
     height: 1.5rem;
     cursor: pointer;
 }
+.bars {
+    display: none;
+}
 @media screen and (max-width:640px){
 .right{
     position: absolute;
