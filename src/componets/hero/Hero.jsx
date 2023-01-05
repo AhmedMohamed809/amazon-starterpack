@@ -24,13 +24,26 @@ const Hero = () => {
       <div className={css.wrapper}>
         {/* blue circle */}
         <motion.div
-          inherit={{ bottom: "2rem" }}
+          initial={{ bottom: "2rem" }}
           whileInView={{ bottom: "0rem" }}
           transition={transition}
           className={css.blueCircle}
         ></motion.div>
-        <img src={HeroImg} alt="" width={600} />
-        <div className={css.cart2}>
+        {/* hero img */}
+        <motion.img
+          initial={{ bottom: "-2rem" }}
+          whileInView={{ bottom: "0rem" }}
+          transition={transition}
+          src={HeroImg}
+          alt=""
+          width={600}
+        />
+        <motion.div
+          initial={{ right: "4%" }}
+          whileInView={{ right: "2%" }}
+          transition={transition}
+          className={css.cart2}
+        >
           <RiShoppingBagFill />
           <div className={css.singup}>
             <span>Best Singup Offers</span>
@@ -39,7 +52,7 @@ const Hero = () => {
               <BsArrowRight />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       {/* right side */}
       <div className={css.h_sides}>
